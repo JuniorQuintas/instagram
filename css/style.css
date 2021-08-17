@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*As propriedades de largura (width) e de altura (height) incluem o tamanho padding size e a propriedade border, mas não incluem a propriedade margin.*/
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background-color: darkgreen;
+  width: 100%; /* largura */
+  min-height: 100vh; /* altura mínima. Impede que o valor usado da propriedade height se torne menor que o valor especificado para min-height */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.container_principal {
+  display: flex; /* O elemento se comporta como um elemento de bloco e apresenta seu conteúdo de acordo com o modelo flexbox. */
+  align-items: center;
+  justify-content: start;
+  width: 60%;
+  height: 100vh;
+}
+
+.instagram_celular {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.instagram_celular img {
+  height: 50rem;
+}
