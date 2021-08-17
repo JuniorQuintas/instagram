@@ -4,11 +4,11 @@
   box-sizing: border-box; /*As propriedades de largura (width) e de altura (height) incluem o tamanho padding size e a propriedade border, mas não incluem a propriedade margin.*/
   text-decoration: none;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 body {
-  background-color: darkgreen;
+  background-color: #fafafa;
   width: 100%; /* largura */
   min-height: 100vh; /* altura mínima. Impede que o valor usado da propriedade height se torne menor que o valor especificado para min-height */
   margin: 0;
@@ -34,4 +34,56 @@ body {
 
 .instagram_celular img {
   height: 50rem;
+}
+
+.instagram_continue {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 50%;
+  min-height: 34rem;
+}
+
+.grupo {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 85%;
+  padding: 1.3rem 0;
+  border: 1px solid lightgray;
+}
+
+.grupo:nth-child(1) {
+  min-height: 19rem;
+}
+
+.instagram_logo {
+  height: 3.5rem;
+  margin: 30px;
+}
+
+.foto_perfil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.instagram_login {
+  background-color: #0095f6;
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  padding: 8px;
+  border-radius: 4px;
+  width: 300px;
+  margin: 30px;
+}
+
+.instagram_logout {
+  margin-bottom: 25px;
 }
